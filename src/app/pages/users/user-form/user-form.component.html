@@ -1,0 +1,72 @@
+<section>
+  <div class="card w-100 my-5">
+    <div class="card-body">
+      <h1 class="card-title text-center">Formulário de Usuário</h1>
+      <form [formGroup]="userForm">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="nome"
+                id="inputNome"
+                placeholder="Digite seu Nome"
+              />
+              <label for="inputNome">Nome</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="sobrenome"
+                id="inputNome"
+                placeholder="Digite seu sobrenome"
+              />
+              <label for="inputNome">Sobrenome</label>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 my-1">
+          <div class="col-6">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="idade"
+                id="inputIdade"
+                placeholder="Digite sua Idade"
+              />
+              <label for="inputIdade">Idade</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="profissao"
+                id="inputProfissao"
+                placeholder="Digite sua Profissão"
+              />
+              <label for="inputProfissao">Profissão</label>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 my-1">
+          <div class="col-12">
+            <button
+              type="submit"
+              class="btn btn-success me-3"
+              (click)="actionButton ()">
+              Cadastrar
+            </button>
+            <button type="submit" class="btn btn-danger">Cancelar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
